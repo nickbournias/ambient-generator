@@ -1,0 +1,34 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ambient Drone Pad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1 class="mb-3">Ambient Pad Generator</h1>
+  <main class="wrap">
+    <header class="top">
+      <div class="chip" id="status">Tap / click & drag to play</div>
+      <div class="chip" id="readout">x —  y —</div>
+    </header>
+
+    <div class="stage">
+      <canvas id="pad" aria-label="Drone pad"></canvas>
+
+      <!-- Minimal overlay instruction (goes away once audio starts) -->
+      <div class="overlay" id="overlay">
+        <div class="overlay-title">Drone Pad</div>
+        <div class="overlay-sub">Touch / click and move</div>
+      </div>
+    </div>
+
+    <p class="hint">
+      <b>X</b>=pitch (scale-snapped), <b>Y</b>=brightness, <b>speed</b>=energy.
+    </p>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
